@@ -1,0 +1,32 @@
+{
+    /*
+        tsconfig.json是TS编译器的配置文件，TS编译器根据配置信息，编译代码
+    */
+    "include": [
+        "src/**/*"
+    ],
+    // "exclude": [
+    //     "src/hello/**/*"
+    // ],
+    // "extends": "./config/base.json",
+    // "files": [
+    //     "core.ts",
+    //     "sys.ts"
+    // ]
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "System",
+        // "lib": ["DOM"],
+        "outDir": "./dist",
+        // "outFile": "./dist/app.js",
+        "allowJs": true,
+        "checkJs": true,
+        "removeComments": true,
+        "noEmit": false,
+        "noEmitOnError": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true
+    }
+}

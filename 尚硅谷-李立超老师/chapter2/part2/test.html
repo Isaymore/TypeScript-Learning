@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const module = {
+            x: 42,
+            getX: function () {
+                console.log('getX的this', this, typeof this);
+                return this.x;
+            }
+        };
+        const unboundGetX = module.getX;
+        console.log(unboundGetX()); // The function gets invoked at the global scope
+        // Expected output: undefined
+
+        const boundGetX = unboundGetX.bind(module);
+        console.log(boundGetX());
+// Expected output: 42
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "ES2015",
+        "strict": true,  // 一般建议开启严格检查的总开关
+        "noEmitOnError": true   // 代码出错时，不编译生成文件
+    }
+}

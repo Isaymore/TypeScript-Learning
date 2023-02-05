@@ -1,0 +1,1 @@
+export const movie:string = "逃学威龙";
